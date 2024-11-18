@@ -1,0 +1,417 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  color: orangered;
+}
+body {
+  font-family: "Trebuchet MS", sans-serif;
+}
+a,
+ul {
+  list-style: none;
+  text-decoration: none;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 100px;
+  background-color: black;
+  color: white;
+}
+nav .nav_1 {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+nav .nav_1 ul {
+  display: flex;
+  gap: 1em;
+}
+nav .nav_1 a {
+  color: white;
+}
+nav .nav_2 ul {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+nav .nav_2 ul li a {
+  color: white;
+}
+nav .nav_2 ul li a:nth-child(1) i {
+  padding-right: 0.5em;
+}
+nav ul li {
+  padding: 10px 18px;
+  border-radius: 100px;
+  cursor: pointer;
+}
+nav ul li:hover {
+  background-color: rgba(255, 255, 255, 0.228);
+}
+nav .nav_2 ul li:nth-child(4) {
+  color: black;
+  background-color: white;
+  transition: all 0.2s ease-in;
+}
+nav .nav_2 ul li:nth-child(4) a {
+  color: black;
+}
+nav .nav_2 ul li:nth-child(4):hover {
+  background-color: rgba(255, 255, 255, 0.896);
+}
+.root {
+  background-color: white;
+  padding: 0px 10%;
+}
+.section__1 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3em;
+}
+.section__1 > * {
+  width: 50%;
+}
+.section__1 .main__1 h1 {
+  font-size: 3.5em;
+  margin-bottom: 0.5em;
+  color: #333;
+}
+.section__1 .main__1 form input {
+  width: 100%;
+  padding: 0.8em 1em;
+  font-size: 1.1em;
+  background-color: rgb(243, 243, 243);
+  border: none;
+  margin-bottom: 0.5em;
+  border-radius: 10px;
+}
+.section__1 .main__1 form input::placeholder {
+  font-size: 1em;
+  color: grey;
+  font-family: Georgia, Times;
+}
+.section__1 .main__1 form {
+  width: 65%;
+}
+.section__1 .main__1 form > a {
+  background-color: black;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 7px;
+  margin-top: 1em;
+  display: inline-block;
+}
+.section__1 .main__2 iframe {
+  width: 100%;
+  height: 500px;
+  border-radius: 15px;
+  border: 15px solid rgba(211, 211, 211, 0.453);
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.161);
+}
+.section__2 {
+  margin-top: 50px;
+}
+.section__2 h1 {
+  font-size: 3.5em;
+  margin-bottom: 1em;
+}
+.section__2 .suggestions_ride {
+  background-color: rgb(240, 230, 230);
+  display: inline-block;
+  padding: 1.5em 0.8em;
+  border-radius: 10px;
+}
+.section__2 .suggestions_ride p {
+  line-height: 1.5;
+  font-size: 1.5em;
+  margin: 0.8em 0;
+}
+.section__2 .suggestions_ride a {
+  display: inline-block;
+  background-color: white;
+  color: black;
+  padding: 8px 15px;
+  border-radius: 100px;
+  box-sizing: 100px;
+}
+.section__3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2em;
+}
+.section__3 > div {
+  width: 45%;
+}
+.section__3 .section_3_img {
+  background-image: url(./stadium.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  height: 500px;
+}
+.section__3 .section_3_content h1 {
+  font-size: 3em;
+}
+.section__3 .section_3_content p {
+  line-height: 1.5;
+  margin: 1.5em 0;
+  font-size: 1.2em;
+  width: 80%;
+}
+.section__3 .section_3_content .section_3_content_btn {
+  display: flex;
+  gap: 2em;
+  align-items: center;
+}
+.section_3_content_btn a:nth-child(1) {
+  background-color: black;
+  color: white;
+  font-size: 1em;
+  padding: 15px 25px;
+  border-radius: 7px;
+  display: inline-block;
+}
+.section_3_content_btn a:nth-child(2) {
+  color: #333;
+  border-bottom: 1px solid black;
+  padding-bottom: 10px;
+}
+.section_3_content_btn a:nth-child(2):hover {
+  color: black;
+  border-bottom: none;
+}
+.section__4 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2em;
+}
+.section__4 > div {
+  width: 45%;
+}
+.section__4 .section_4_img {
+  background-image: url(./vini.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  height: 500px;
+}
+.section__4 .section_4_content h1 {
+  font-size: 3em;
+}
+.section__4 .section_4_content p {
+  line-height: 1.5;
+  margin: 1.5em 0;
+  font-size: 1.2em;
+  width: 80%;
+}
+.section__4 .section_4_content .section_4_content_btn {
+  display: flex;
+  gap: 2em;
+  align-items: center;
+}
+.section_4_content_btn a:nth-child(1) {
+  background-color: black;
+  color: white;
+  font-size: 1em;
+  padding: 15px 25px;
+  border-radius: 7px;
+  display: inline-block;
+}
+.section_4_content_btn a:nth-child(2) {
+  color: #333;
+  border-bottom: 1px solid black;
+  padding-bottom: 10px;
+  margin-left: 20px;
+}
+.section_4_content_btn a:nth-child(2):hover {
+  color: black;
+  border-bottom: none;
+}
+.section__5 {
+  background-color: rgb(233, 233, 233);
+  margin-top: 50px;
+  /* display: flex; */
+}
+.section__5 {
+  padding: 40px 70px;
+}
+.section__5 h1 {
+  font-size: 2.5em;
+}
+.section__5 .qrcode {
+  display: flex;
+  justify-content: space-between;
+}
+.section__5 .qrcode section {
+  width: 48%;
+  background-color: white;
+  margin-top: 2.5em;
+  align-items: center;
+  padding: 2em 2em;
+}
+.section__5 .qrcode section {
+  display: flex;
+  gap: 2em;
+}
+.section__5 .qrcode section .qrimage {
+  background-image: url(./stadium.jpg);
+  height: 120px;
+  width: 120px;
+  background-size: cover;
+  background-position: center;
+}
+footer {
+  background-color: black;
+  color: white;
+  padding: 4em;
+}
+footer .link {
+  margin: 4em 0em;
+  display: flex;
+  justify-content: flex-start;
+  gap: 12em;
+}
+
+footer .link a {
+  display: block;
+  color: white;
+  margin-bottom: 10px;
+}
+footer .link div h4 {
+  margin-bottom: 15px;
+  font-size: 1.2em;
+}
+footer header a {
+  color: white;
+  display: inline-block;
+  padding-bottom: 30px;
+  /* background-color: white; */
+}
+footer header a:hover {
+  text-decoration: underline;
+}
+@media (max-width: 1090px) {
+  nav .nav_1 ul {
+    display: none !important;
+  }
+  .section__1 {
+    flex-direction: column;
+    gap: 2.5em;
+  }
+  .main__1,
+  .main__2 {
+    width: 100%;
+  }
+  .section__3,
+  .section__5 .qrcode {
+    flex-direction: column;
+    gap: 2.5em;
+    margin-bottom: 5em;
+  }
+  .section__5 .qrcode > * {
+    width: 100% !important;
+  }
+  .section_3_content,
+  .section_3_img {
+    width: 100% !important;
+  }
+  .section__4 {
+    flex-direction: column;
+    gap: 2.5em;
+  }
+  .section_4_content,
+  .section_4_img {
+    width: 100% !important;
+  }
+  footer .link {
+    flex-flow: column;
+    gap: 5em !important;
+  }
+}
+
+@media (max-width: 590px) {
+  nav .nav_2 ul li:nth-child(1),
+  nav .nav_2 ul li:nth-child(2),
+  nav .nav_2 ul li:nth-child(3) {
+    display: none !important;
+  }
+  nav {
+    padding: 15px 30px !important;
+  }
+  .section__1 .main__1 h1 {
+    font-size: 1.5em;
+  }
+  .section__1 .main__1 form input {
+    width: 100%;
+    font-size: 0.8em;
+  }
+  .section__1 .main__1 form > a {
+    padding: 7px 12px;
+    margin-top: 0.8em;
+  }
+  .section__2 h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.3em;
+  }
+  .section__2 .suggestions_ride {
+    padding: 1em 0.5em;
+  }
+  .section_3_img,
+  .section_4_img {
+    height: 100px;
+  }
+  .section__2 .suggestions_ride p {
+    font-size: 1em !important;
+}
+.section__3 .section_3_img,  .section__4 .section_4_img {
+    height: 300px;
+}
+.section__3 .section_3_content h1, .section__4 .section_4_content h1 {
+    font-size: 1.3em !important;
+}
+ p {
+    font-size: 1em !important;
+    color: #445;
+ } 
+ a {
+    font-size: 0.5em !important;
+ }
+ .section_4_content {
+    margin-top: 2em !important;
+ }
+ .section__5 h1{
+    font-size: 1.3em !important;
+ }
+ .section__5 .qrcode section{
+    flex-direction: column !important;
+ }
+ .qrcontent h2 {
+    font-size: 1.2em !important;
+ }
+ .section__5 {
+    padding: 1em 1.1em;
+ }
+ footer a {
+    font-size: 0.8em !important;
+ }
+ iframe {
+    height: 200px !important;
+ }
+ .section__2 h1 {
+    font-size: 1.3em !important;
+ }
+ form a {
+    font-size: 1em !important;
+    padding: 9px 22px !important;
+ }
+ input {
+    padding: 1em !important;
+    border-radius: 4px !important;
+    border: 5px solid rgba(128, 128, 128, 0.125) !important;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.148);
+ }
+}
